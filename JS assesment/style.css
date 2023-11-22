@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.rg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    
+}
+label {
+    display: inline-block;
+    width: 170px;
+}
+
+button{
+
+    border: 1px solid green;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    background: green;
+}
+
+input,
+textarea{
+    padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+textarea{
+    width: 600px;
+}
+
+
+
+
