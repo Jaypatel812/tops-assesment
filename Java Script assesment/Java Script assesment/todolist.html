@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h2>To-Do List In JavaScript</h2>
+    <div class="box-todo">
+        <div class="todo-content">
+            <input type="text" id="todo-input">
+            <button class="add-btn" onclick="addTodoList()">ADD</button>
+        </div>
+        <div class="list-todo">
+            <ul id="list">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<style>
+		#list {
+			list-style-type: none;
+			padding: 0;
+		}
+		li {
+			margin: 10px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		li button {
+			background-color: #f44336;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+		li button:hover {
+			background-color: #d32f2f;
+		}
+	</style>
+</head>
+<body>
+	<h1>To-Do List</h1>
+	<input type="text" id="todo-input" placeholder="Enter a task...">
+	<button onclick="addTodoList()">Add</button>
+	<ul id="list"></ul>
+	<script>
+		const todoinput = document.getElementById("todo-input");
+		const list = document.getElementById("list");
+		let todos = [];
+
+		window.addEventListener("load", () => {
+			const urlstring = decodeURIComponent(document.cookie);
+			const string = urlstring.split("=");
+			if (string.length > 1) {
+				todos = JSON.parse(string[1]);
+			}
+			updatetodos();
+		});
+
+		function updatetodos() {
+			list.innerHTML = "";
+			for (let todo of todos) {
+				const li = document.createElement("li");
+				li.innerText = todo;
+				list.appendChild(li);
+			}
+			document.cookie = `todos=${JSON.stringify(todos)}`;
+		}
+
+		function addTodoList() {
+			if (!todoinput.value) {
+				return alert("Input Some Value");
+			}
+			todos.push(todoinput.value);
+			todoinput.value = "";
+			updatetodos();
+		}
+	</script>
+</body>
+</html> -->
